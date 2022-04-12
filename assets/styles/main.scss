@@ -4,19 +4,33 @@
 @import 'components/btns';
 
 .registration-layout {
-	background-color: #ffffff;
 	height: 100%;
+	width: 66.6666%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	flex: 1;
+	padding: 20px;
+	background-color: #ffffff;
 }
 
 .aside-layout {
 	width: 33.3333%;
+	background-image: url('../images/aside-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 45% 50%;
+	height: 100%;
+}
 
-	& img {
-		width: 100%;
-		height: auto;
+.rl {
+	&-fields {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	&-fieldside {
+		flex: 1;
+		padding: 0 30px;
 	}
 }
