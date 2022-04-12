@@ -31,10 +31,10 @@
 
 				<div class="rl-fieldside">
 
-					<h4 class="m-head">
-						Övladınızın adı, soyadı, ata adı
-					</h4>
-					<input type="text" class="m-inpt" placeholder="Informatsiya">
+					<div class="rl-field">
+						<label class="m-head" for="name">Övladınızın adı, soyadı, ata adı</label>
+						<input type="input" class="m-inpt" id="name" name="name" placeholder="Input with label">
+					</div>
 
 					<h4 class="m-head">
 						Övladınızın doğum tarixi
@@ -85,15 +85,19 @@
 					</h4>
 					<input type="text" class="m-inpt" placeholder="Informatsiya">
 
+					<div class="rl-confirm">
+						<input type="checkbox" id="confirm" name="confirm">
+						<label for="confirm">I agree with <span style="color: #EA8068;">terms and conditins</span>.</label>
+					</div>
+
+					<button class="m-btn">
+						<p>Qeydiyyatdan keç</p>
+					</button>
+
 				</div>
 
 			</div>
 
-			<div class="m-rflex">
-				<button class="m-btn">
-					<p>Qeydiyyatdan keç</p>
-				</button>
-			</div>
 		</section>
 
 		<aside class="aside-layout"></aside>
