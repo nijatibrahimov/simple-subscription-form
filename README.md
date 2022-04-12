@@ -1,1 +1,1 @@
-# simple subscription form
+# https://nijatibrahimov.github.io/simple-subscription-form/

@@ -1,0 +1,22 @@
+@import 'components/global';
+@import 'components/headers';
+@import 'components/inputs';
+@import 'components/btns';
+
+.registration-layout {
+	background-color: #ffffff;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex: 1;
+}
+
+.aside-layout {
+	width: 33.3333%;
+
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}
