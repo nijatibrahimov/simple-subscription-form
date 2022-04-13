@@ -1,3 +1,9 @@
 window.addEventListener('load', function () {
-  console.log('fired')
+
+  const modalBtn = document.querySelector('.m-modal')
+
+  modalBtn.addEventListener('click', function () {
+    alert('helo')
+  })
+
 })
