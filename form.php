@@ -2,7 +2,7 @@
 
 	if($_POST['name'] && $_POST['fin']){
     $to = "nohavegoodidea@gmail.com";
-    $from = $_POST['name'];
+    $from = "nohavegoodidea@gmail.com";
     $first_name = $_POST['name'];
     $subject = "Subject";
     $message = "сообщение от " . $first_name;

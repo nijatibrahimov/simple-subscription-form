@@ -149,7 +149,7 @@
 
 	<footer>Made with 💖 by Ibrahimov</footer>
 
-	<script src="assets/scripts/script.js"></script>
+	<script src="assets/scripts/script.js?v=1"></script>
 </body>
 
 </html>

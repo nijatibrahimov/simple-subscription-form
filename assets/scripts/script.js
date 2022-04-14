@@ -2,8 +2,6 @@ window.addEventListener('load', function () {
 
   const registrationForm = document.querySelector('.rl-fields')
 
-  console.log('text')
-
   registrationForm.addEventListener('submit', function (event) {
 
     event.preventDefault();
