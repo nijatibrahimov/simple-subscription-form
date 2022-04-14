@@ -33,14 +33,14 @@
 
 					<div class="rl-field">
 						<label class="m-head" for="name">Övladınızın adı, soyadı, ata adı</label>
-						<input type="input" class="m-inpt" id="name" name="name" placeholder="Adı, Soyadı, Ata adı">
+						<input type="text" class="m-inpt" id="name" name="name" placeholder="Adı, Soyadı, Ata adı">
 					</div>
 
 					<div class="rl-field">
 						<label class="m-head" for="date">
 							Övladınızın doğum tarixi
 						</label>
-						<input type="date" value="2000-01-01" min="2000-01-01" max="2012-12-31" type="input" class="m-inpt"
+						<input type="date" value="2000-01-01" min="2000-01-01" max="2012-12-31" class="m-inpt"
 							id="date" name="date" placeholder="Məlumat əlavə edin...">
 					</div>
 
@@ -48,22 +48,22 @@
 						<label class="m-head" for="fin">
 							Şəxsiyyət vəsiqəsinin FİN kodu
 						</label>
-						<input type="text" class="m-inpt fin" id="fin" name="fin" pattern="[0-Z]{7}" maxlength="7"
-							placeholder="FIN">
+						<input type="text" class="m-inpt fin" id="fin" name="fin" pattern="[0-9]{7}" maxlength="7"
+							placeholder="FIN" required>
 					</div>
 
 					<div class="rl-field">
 						<label class="m-head" for="allergy">
 							Övladınızın nəyəsə qarşı allergiyası varsa qeyd edin
 						</label>
-						<input type="input" class="m-inpt" id="allergy" name="allergy" placeholder="Məlumat əlavə edin...">
+						<input type="text" class="m-inpt" id="allergy" name="allergy" placeholder="Məlumat əlavə edin...">
 					</div>
 
 					<div class="rl-field">
 						<label class="m-head" for="differentInformation">
 							Övladınızın haqqında bilməli olduğumuz digər vacib məqamlar varsa qeyd edin
 						</label>
-						<input type="input" class="m-inpt" id="differentInformation" name="differentInformation"
+						<input type="text" class="m-inpt" id="differentInformation" name="differentInformation"
 							placeholder="Məlumat əlavə edin...">
 					</div>
 
@@ -75,7 +75,7 @@
 						<label class="m-head" for="parentName">
 							Valideynin adı, Soyadı
 						</label>
-						<input type="input" class="m-inpt" id="parentName" name="parentName" placeholder="Valideynin adı, Soyadı">
+						<input type="text" class="m-inpt" id="parentName" name="parentName" placeholder="Valideynin adı, Soyadı">
 					</div>
 
 					<div class="rl-field rl-field-number">
@@ -100,14 +100,14 @@
 						<label class="m-head" for="disease">
 							Övladınızın hər hansı bir xəstəliyi varsa qeyd edin (astma, epilepsiya)
 						</label>
-						<input type="input" class="m-inpt" id="disease" name="disease" placeholder="Məlumat əlavə edin...">
+						<input type="text" class="m-inpt" id="disease" name="disease" placeholder="Məlumat əlavə edin...">
 					</div>
 
 					<div class="rl-field">
 						<label class="m-head" for="education">
 							Təhsil aldığı məktəb və ya təhsil müəssisəsi
 						</label>
-						<input type="input" class="m-inpt" id="education" name="education" placeholder="Məlumat əlavə edin...">
+						<input type="text" class="m-inpt" id="education" name="education" placeholder="Məlumat əlavə edin...">
 					</div>
 
 					<div class="rl-confirm">
@@ -117,7 +117,7 @@
 							conditins</span>.
 					</div>
 
-					<button class="m-btn">
+					<button type="submit" class="m-btn">
 						<p>Qeydiyyatdan keç</p>
 					</button>
 
