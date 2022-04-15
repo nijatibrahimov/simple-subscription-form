@@ -10,22 +10,23 @@ window.addEventListener('load', function () {
 
     console.log(checkbox.checked)
 
-    fetch("form.php", {
-      method: 'POST',
-      mode: 'same-origin',
-      credentials: 'same-origin',
-      body: new FormData(registrationForm)
-    })
-      .then(function (response) {
-        return response.json()
-      })
-      .then(function (data) {
-        if (data.success) {
-          alert(data.message)
-        } else {
-          alert(data.message)
-        }
-      })
+    // fetch("form.php", {
+    //   method: 'POST',
+    //   mode: 'same-origin',
+    //   credentials: 'same-origin',
+    //   body: new FormData(registrationForm)
+    // })
+    //   .then(function (response) {
+    //     return response.json()
+    //   })
+    //   .then(function (data) {
+    //     if (data.success) {
+    //       alert(data.message)
+    //     } else {
+    //       alert(data.message)
+    //     }
+    //   })
+
   })
 
 
