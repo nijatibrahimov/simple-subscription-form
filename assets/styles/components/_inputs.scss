@@ -18,15 +18,21 @@ label.m-head {
 }
 
 input::placeholder {
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+	font-size: 1rem;
 	color: #dededc;
 	opacity: 1;
 }
 
 input:-ms-input-placeholder {
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+	font-size: 1rem;
 	color: #dededc;
 }
 
 input::-ms-input-placeholder {
+	font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+	font-size: 1rem;
 	color: #dededc;
 }
 

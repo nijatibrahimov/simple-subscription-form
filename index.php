@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>simple subscription form</title>
-	<link rel="stylesheet" href="assets/styles/main.css">
+	<link rel="stylesheet" href="assets/styles/main.css?v<?= time(); ?>">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
 
 					<div class="rl-field">
 						<label class="m-head" for="name">Övladınızın adı, soyadı, ata adı</label>
-						<input type="text" class="m-inpt" id="name" name="name" placeholder="Adı, Soyadı, Ata adı">
+						<input type="text" class="m-inpt" id="name" name="name" placeholder="Adı, Soyadı, Ata adı" required>
 					</div>
 
 					<div class="rl-field">
@@ -41,15 +41,15 @@
 							Övladınızın doğum tarixi
 						</label>
 						<input type="date" value="2000-01-01" min="2000-01-01" max="2012-12-31" class="m-inpt"
-							id="date" name="date" placeholder="Məlumat əlavə edin...">
+							id="date" name="date" placeholder="Məlumat əlavə edin..." required>
 					</div>
 
 					<div class="rl-field">
 						<label class="m-head" for="fin">
 							Şəxsiyyət vəsiqəsinin FİN kodu
 						</label>
-						<input type="text" class="m-inpt fin" id="fin" name="fin" pattern="[0-9]{7}" maxlength="7"
-							placeholder="FIN" required>
+						<input type="text" class="m-inpt fin" id="fin" name="fin" maxlength="7"
+							placeholder="FIN" data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" required>
 					</div>
 
 					<div class="rl-field">
@@ -63,8 +63,8 @@
 						<label class="m-head" for="differentInformation">
 							Övladınızın haqqında bilməli olduğumuz digər vacib məqamlar varsa qeyd edin
 						</label>
-						<input type="text" class="m-inpt" id="differentInformation" name="differentInformation"
-							placeholder="Məlumat əlavə edin...">
+						<textarea class="m-inpt rl-input-different" id="differentInformation" name="differentInformation"
+							placeholder="Məlumat əlavə edin..."></textarea>
 					</div>
 
 				</div>
@@ -75,7 +75,7 @@
 						<label class="m-head" for="parentName">
 							Valideynin adı, Soyadı
 						</label>
-						<input type="text" class="m-inpt" id="parentName" name="parentName" placeholder="Valideynin adı, Soyadı">
+						<input type="text" class="m-inpt" id="parentName" name="parentName" placeholder="Valideynin adı, Soyadı" required>
 					</div>
 
 					<div class="rl-field rl-field-number">
@@ -84,7 +84,7 @@
 						</label>
 						<span class="tel-code">+994</span>
 						<input type="tel" class="m-inpt" id="parentNumber" name="parentNumber" pattern="[0-9]{9}" maxlength="9"
-							placeholder="123456789" required>
+							placeholder="123456789" data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" required>
 					</div>
 
 					<div class="rl-field rl-field-number">
@@ -93,7 +93,7 @@
 						</label>
 						<span class="tel-code">+994</span>
 						<input type="tel" class="m-inpt" id="parentSecondNumber" name="parentSecondNumber" pattern="[0-9]{9}"
-							maxlength="9" placeholder="123456789" required>
+							maxlength="9" placeholder="123456789" data-maxlength="9" oninput="this.value=this.value.slice(0,this.dataset.maxlength)" required>
 					</div>
 
 					<div class="rl-field">
@@ -107,7 +107,7 @@
 						<label class="m-head" for="education">
 							Təhsil aldığı məktəb və ya təhsil müəssisəsi
 						</label>
-						<input type="text" class="m-inpt" id="education" name="education" placeholder="Məlumat əlavə edin...">
+						<input type="text" class="m-inpt" id="education" name="education" placeholder="Məlumat əlavə edin..." required>
 					</div>
 
 					<div class="rl-confirm">
@@ -149,7 +149,7 @@
 
 	<footer>Made with 💖 by Ibrahimov</footer>
 
-	<script src="assets/scripts/script.js?v=1"></script>
+	<script src="assets/scripts/script.js?v<?= time(); ?>"></script>
 </body>
 
 </html>

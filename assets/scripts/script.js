@@ -2,9 +2,13 @@ window.addEventListener('load', function () {
 
   const registrationForm = document.querySelector('.rl-fields')
 
+  const checkbox = document.querySelector('#confirm')
+
   registrationForm.addEventListener('submit', function (event) {
 
     event.preventDefault();
+
+    console.log(checkbox.checked)
 
     fetch("form.php", {
       method: 'POST',
@@ -23,6 +27,7 @@ window.addEventListener('load', function () {
         }
       })
   })
+
 
 
 

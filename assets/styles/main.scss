@@ -46,6 +46,20 @@
 		align-items: center;
 		margin-bottom: 30px;
 	}
+
+	&-input-different {
+		font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		letter-spacing: 0.25px;
+		padding: 1rem;
+		resize: none;
+		height: 184px;
+	}
+}
+
+.fin {
+	text-transform: uppercase;
 }
 
 .popup {
@@ -104,4 +118,78 @@ div[data-status='false'] {
 
 div[data-status='true'] {
 	display: block;
+}
+
+
+// media
+@media (max-width: 1200px) {
+	main {
+		flex-direction: column-reverse;
+	}
+
+	.registration-layout {
+		width: 100%;
+	}
+
+	.aside-layout {
+		width: 100%;
+		height: 300px;
+		background-position: 50% 20%;
+	}
+}
+
+@media (max-width: 768px) {
+	.rl-fields {
+		flex-direction: column;
+		width: 100%;
+		max-width: 720px;
+		padding: 0 20px;
+	}
+
+	label.m-head {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 719.98px) {
+	.rl-fieldside {
+		padding: 0;
+	}
+
+	.rl-field {
+		padding: 0;
+	}
+
+}
+
+@media (max-width: 479.98px) {
+	.registration-layout {
+		padding: 10px;
+	}
+
+	.m-inpt {
+		width: 275px;
+	}
+
+	.rl-input-different {
+		width: 275px;
+	}
+}
+
+@media (max-width: 379.98px) {
+	.registration-layout {
+		padding: 10px;
+	}
+
+	.rl-fields {
+		padding: 0;
+	}
+
+	.m-inpt {
+		width: 275px;
+	}
+
+	.rl-input-different {
+		width: 275px;
+	}
 }
